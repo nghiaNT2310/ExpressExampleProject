@@ -1,5 +1,5 @@
 name : learn_workflow
-run-name: $(github.actor) is learning from Github Acitons
+run-name: ${{github.actor}} is learning from Github Acitons
 on: [push]
 jobs:
     check-bats-version:
@@ -9,5 +9,5 @@ jobs:
         - users: aciton/setup-node@v3
           with:
             node-version: 14
-            - run: npm install -g bats
-            - run: bats -v
+        - run: npm install -g bats
+        - run: bats -v
