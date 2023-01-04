@@ -7,7 +7,7 @@ jobs:
        steps:
         - users: action/checkout@v3
         - users: aciton/setup-node@v3
-           with:
+          with:
             node-version: '14'
             - run: npm install -g bats
             - run: bats -v
