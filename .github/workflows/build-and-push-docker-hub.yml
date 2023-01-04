@@ -30,7 +30,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ngonghia/express-sample-project:staging
+          tags: ngonghia/express-sample-project
 
 
   pull-and-up:
